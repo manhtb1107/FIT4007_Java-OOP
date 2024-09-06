@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Bai2 {
+    public static void main(String[] args) {
+        System.out.print("Nhập kích thước ma trận vuông n: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[][] arr = new int[n][n];
+        System.out.println("Nhập các phần tử của ma trạn: ");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += arr[i][i];
+        }
+        System.out.println("Tổng các phần tử trên đường chéo chính: "+sum);
+    }
+}

@@ -1,0 +1,11 @@
+public class Bai3 {
+    public static void main(String[] args) {
+        String chuoi1 = "Dai hoc";
+        String chuoi2 = "Dai Nam";
+        String ketQua = chuoi1 + " " + chuoi2;
+        String ketQuaHoa = ketQua.toUpperCase();
+        int doDai = ketQuaHoa.length();
+        System.out.println("Chuỗi kết quả: " + ketQuaHoa);
+        System.out.println("Độ dài của chuỗi: " + doDai);
+    }
+}
